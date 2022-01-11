@@ -244,10 +244,15 @@ nav ul li:hover{
         height: 100%;
         width: 175vh;
     }
+    .product img{
+        align-items: center;
+        padding: 10px;
+    }
     .lineup{
         flex-direction: column;
     }
     #slider img{
         height: 100%;
+        width: 100vh;
     }
 }
