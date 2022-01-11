@@ -1,8 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Nunito+Sans&display=swap');
+* {
+    margin : 0;
+    padding: 0;
+}
 body{
     background-color: #f0f0f0;
     font-family: "Poppins", sans-serif;
+}
+
+.container{
+    height: auto;
+    width: auto;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container p{
+    font-size: 2rem;
+    font-family: 'Island Moments', cursive;
+}
+
+.slider-box{
+    width: 90%;
+    height: 90vh;
+    overflow: hidden;
+    margin: 50px auto;
+    position: relative;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider img{
+    height: 110vh;
+    width: 100%;
+}
+.indicators{
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    transform: translateX(-50%);
+}
+.indicators span{
+    background-color: grey;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.active {
+    background: #ffff !important;
 }
 
 .navbar{
@@ -14,6 +72,8 @@ body{
     justify-content: space-between;
     
 }
+
+
 .logo{
     width: 25vh;
     cursor: pointer;
@@ -21,7 +81,7 @@ body{
 nav {
     flex:1;
     text-align: right;
-
+    padding: 30px;
 }
 
 nav ul li{
@@ -35,79 +95,14 @@ nav ul li a{
     font-size: 30px;
     font-family:cursive;
     padding: 15px;
+    text-decoration: none;
 }
 nav ul li:hover{
     transform: scale(1.1);
     transition: 0.3s;
     color:red;
 }
-.f-container{
-    display: flex;
-    height: 60vh;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    align-items: flex-end;
-    padding: 20px;
-    padding-top: 50px;
-    background-image: linear-gradient(50deg, rgba(255,255,255,0.9) 50% ,rgba(0,0,0,0.5) 50%),url("wallpaper.png");
-    
-}
-.f-container div:first-child{
-    width: 60vh;
-    height: 50vh;
-    justify-content: space-between;
-    padding-bottom: 50px;
-}
 
-.f-container div:first-child h1{
-    font-size: 70px;
-    padding-left: 30px;
-    padding-top: 20px;
-    color: #B9B7BD;
-}
-.f-container div:first-child p{
-    font-size: 35px;
-    padding-left: 30px;
-    padding-top: 5px;
-    color: #B9B7BD;
-}
-
-.f-container div:last-child{
-    margin-left: auto;
-    position: relative;
-    width: 60vh;
-    height: 60vh;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, -1);
-    transition: 2s;
-}
-
-.f-container div:last-child img{
-    width: 50vh;
-    height: 50vh;
-    display: block;
-}
-
-.buynow{
-    height: 10px;
-    width: 20px;
-    padding-left: 30px;
-    padding-top: 50px;
-}
-.buynow a{
-    font-size: 30px;
-    padding: 5px;
-    margin-left: 20px;
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-}
-
-.buynow a:hover{
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, -1);
-    color:red;
-    transition:1s;
-    transform: scale(1.2);
-}
 #hamburger-icon{
     display: none;
 }
@@ -157,13 +152,47 @@ nav ul li:hover{
     opacity: 0.5;
 }
 
-@media only screen and (max-width:600px){
+.lineup{
+    display: flex;
+    height: auto;
+    padding: 50px;
+    text-align: center;
+    flex-direction: row;
+}
+.product h1{
+    font-size: 3rem;
+    padding: 15px;
+}
+.product p{
+    padding: 15px;
+}
+.lineup img{
+    height: 50vh;
+    width: 50vh;
+    padding:50px;
+}
+.lineup button{
+    padding: 15px;
+    height: 50px;
+    width: 90px;
+}
+
+
+
+@media only screen and (max-width:770px){
 
     header nav{
         display: none;
     }
     .navbar{
         display: none;
+    }
+    #myLinks ul li{
+        list-style: none;
+        padding: 5px;
+    }
+    #myLinks a{
+        text-decoration: none;
     }
     .f-container{
         display: flex;
@@ -193,6 +222,11 @@ nav ul li:hover{
         font-family:cursive;
         padding-right: 20px;
     }
+
+    #hamburger-icon a img{
+        width: 50px;
+    }
+
     #hamburger-icon img{
         width: 160px;
     }
@@ -211,5 +245,11 @@ nav ul li:hover{
     .section video{
         height: 100%;
         width: 200vh;
+    }
+    .lineup{
+        flex-direction: column;
+    }
+    #slider img{
+        height: 100%;
     }
 }

@@ -14,7 +14,7 @@
         <img src="logo.png" class="logo" alt="">
         <nav><ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#video">Content</a></li>
+            <li><a href="#video">Video</a></li>
             <li><a href="#footer">Footers</a></li>
         </ul></nav>
     </div>
@@ -23,35 +23,71 @@
         <img src="logo.png" class="logo" alt="">
         <div class="drop">
             
-        <a href="javascript:void(0);"  onclick="dropdown()">drop</a>
+        <a href="javascript:void(0);"  onclick="dropdown()"><img src="drop.png"></a>
     </div><div id="myLinks" ><ul class="mobile-menu">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/video">Video</a></li>
-            <li><a href="/footer">Footer</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#footer">Footer</a></li>
         </ul>
         
     </div>
     </div>
     </header>
-    <div class="f-container">
-        <div class="f-item-1">
-            <h1>DiyaPods</h1>
-                <p>Built for people; By People</p>
-                <div class="buynow"><a href="www.amazon.com">Buy now</a></div>
-        </div>
-        <div class="f-item-2"><img src="duopods.jpg" alt=""></div>
+    <div class="container">
+        <h1>DiyaSonic</h1>
+        <p>For People; By People</p>
     </div>
-    <div class="section">
+    <div class="slider-box">
+        <div id="slider">
+            <img src="./images/wall1.jpg">
+            <img src="./images/wall2.jpg">
+            <img src="./images/wall3.jpg">
+            <img src="./images/wall4.jpg">
+        </div>
+        <div class="indicators">
+            <span id="btn1"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
 
-        <h1><a href="www.google.com">Buy Now!</a></h1>
+    </div>
+    <div class="section" id="#video">
 
-        <div class="video-container">
+        <h1><a href="www.google.com">Seamless!</a></h1>
+
+        <div class="video-container" >
             <div class="color-overlay"></div>
-            <video autoplay loop muted>
+            <video autoplay loop muted id="video">
                 <source src="video.mp4" type="video/mp4">
             </video>
         </div>
+    </div> 
 
+
+    <div class="lineup">
+        <div class="product">
+        <img src="images/sony.webp" alt="">
+        <div class="details">
+            <h1>Sony by DiyaSonic</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo, dolor, placeat ipsam exercitationem in quasi voluptatibus blanditiis nobis repellat doloremque eveniet dignissimos? Quibusdam a sed maiores veritatis fugit saepe!</p>
+        </div>
+        <div>
+            <button>Buy Now</button>
+            <span>from amazon</span>
+        </div>
+        </div>
+        <div class="product">
+        <img src="images/skull.jpg" alt="">
+        <div>
+            <h1>skull by DiyaSonic</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo, dolor, placeat ipsam exercitationem in quasi voluptatibus blanditiis nobis repellat doloremque eveniet dignissimos? Quibusdam a sed maiores veritatis fugit saepe!</p>
+        </div>
+        <div>
+            <button>Buy Now</button>
+            <span>from amazon</span>
+        </div>
+    </div>
     </div>
     //Video by cottonbro from Pexels/
     <script src="script.js"></script>
