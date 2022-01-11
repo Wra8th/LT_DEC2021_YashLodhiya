@@ -249,7 +249,7 @@ nav ul li:hover{
         align-items: center;
         padding: 10px;
         height: 100%;
-        width: 60%;
+        width: 75%;
     }
     .lineup{
         flex-direction: column;
@@ -258,4 +258,14 @@ nav ul li:hover{
         height: 100%;
         width: 100vh;
     }
+    
+    .container h1{
+        font-size: 4rem;
+    }
+    
+    .container p{
+        font-size: 1.6rem;
+        font-family: 'Island Moments', cursive;
+    }
+    
 }
