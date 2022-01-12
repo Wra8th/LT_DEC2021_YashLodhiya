@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiyaSonic</title>
+    <title>PARAGON</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
     <div class="container-nav">
         <div class="navbar">
-        <img src="logo.png" class="logo" alt="">
+        <img src="logo3.PNG" class="logo" alt="">
         <nav><ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#video">Video</a></li>
-            <li><a href="#footer">Footers</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#foot">Contact</a></li>
         </ul></nav>
     </div>
     </div>
     <div id="hamburger-icon">
-        <img src="logo.png" class="logo" alt="">
+        <img src="logo3.PNG" class="logo" alt="">
         <div class="drop">
             
         <a href="javascript:void(0);"  onclick="dropdown()"><img src="drop.png"></a>
     </div><div id="myLinks" ><ul class="mobile-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#footer">Footer</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#foot">Contact</a></li>
         </ul>
         
     </div>
     </div>
     </header>
     <div class="container">
-        <h1>DiyaSonic</h1>
+
+        <h1>PARAGON</h1>
         <p>For People; By People</p>
     </div>
     <div class="slider-box">
@@ -54,7 +58,7 @@
     </div>
     <div class="section" id="#video">
 
-        <h1><a href="www.google.com">Seamless!</a></h1>
+        <h1><a href="#">Seamless!</a></h1>
 
         <div class="video-container" >
             <div class="color-overlay"></div>
@@ -65,31 +69,66 @@
     </div> 
 
 
-    <div class="lineup">
+    <div class="lineup" id="products">
         <div class="product">
         <img src="images/sony.webp" alt="">
         <div class="details">
-            <h1>Sony by DiyaSonic</h1>
+            <h1>Sony by PARAGON</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo, dolor, placeat ipsam exercitationem in quasi voluptatibus blanditiis nobis repellat doloremque eveniet dignissimos? Quibusdam a sed maiores veritatis fugit saepe!</p>
         </div>
         <div>
-            <button>Buy Now</button>
+            <button id="amazon" onclick="redirect()">Buy Now</button>
             <span>from amazon</span>
         </div>
         </div>
         <div class="product">
         <img src="images/skull.jpg" alt="">
         <div>
-            <h1>skull by DiyaSonic</h1>
+            <h1>Skull by PARAGON</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo, dolor, placeat ipsam exercitationem in quasi voluptatibus blanditiis nobis repellat doloremque eveniet dignissimos? Quibusdam a sed maiores veritatis fugit saepe!</p>
         </div>
         <div>
-            <button>Buy Now</button>
+            <button onclick="redirect()">Buy Now</button>
             <span>from amazon</span>
         </div>
     </div>
     </div>
-    //Video by cottonbro from Pexels/
+    <footer id="foot">
+        <div class="foot">
+            <div class="quick-links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a onclick="location.href = 'https://www.amazon.com'";>Amazon</a></li>
+                    <li><a onclick="location.href = 'https://www.flipkart.com'">Flipkart</a></li>
+                    <li><a onclick="location.href = 'https://www.alibaba.com'">Alibaba</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h1>PARAGON</h1>
+                <h2>Contact on :</h2>
+                <h2><a id="number">9456215221</a></h2>
+                <p id="credits">//Video by cottonbro from Pexels//
+                    <br> 
+                    //Website made by Yash Lodhiya//</p>
+            </div>
+            <div class="social-media">
+                <h1>Follow us on:</h1>
+                <ul>
+                    <li>
+                        <a id="linkedin" class="fa fa-linkedin" onclick="location.href = 'https://www.linkedin.com'"></a>
+                        
+                    </li>
+                    <li>
+                        <a class="fa fa-pinterest" onclick="location.href = 'https://www.pinterest.com'"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-reddit" onclick="location.href = 'https://www.reddit.com'"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

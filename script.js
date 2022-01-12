@@ -6,7 +6,12 @@ function dropdown(){
       x.style.display = "block";
     }
 }
-
+function redirect(url)
+{
+  var url = "https://www." + url + ".com"
+  window.location.assign('url');
+  console.log(url)
+}
 
 var slide = document.getElementById("slider")
 var btn1 = document.getElementById("btn1")

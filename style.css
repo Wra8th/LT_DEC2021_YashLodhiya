@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Luxurious+Roman&family=Nunito+Sans&family=Old+Standard+TT:wght@400;700&family=Open+Sans:wght@300&display=swap');
+
 * {
     margin : 0;
     padding: 0;
 }
+p {
+    font-family: 'Open Sans', sans-serif;
+}
 body{
-    background-color: #f0f0f0;
+    background-color: #f3f3f3;
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,7 +23,7 @@ body{
 .container h1{
     text-align: center;
     font-size: 5rem;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Old Standard TT', serif;
 }
 
 .container p{
@@ -29,7 +32,7 @@ body{
 }
 
 .slider-box{
-    width: 100%;
+    width: 95%;
     height: 90vh;
     overflow: hidden;
     margin: 50px auto;
@@ -66,16 +69,15 @@ body{
 .navbar{
     display:flex;
     flex-direction: row;
-    height: 10vh;
-    background-color: #f0f0f0;
+    height: 20vh;
+    background-color: #f0f1f1;
     padding: 5px;
     justify-content: space-between;
-    
 }
 
-
 .logo{
-    width: 25vh;
+    height: 20vh;
+    width: 30vh;
     cursor: pointer;
 }
 nav {
@@ -159,9 +161,19 @@ nav ul li:hover{
     text-align: center;
     flex-direction: row;
 }
+.product{
+    background-color: #DDDDDD;
+    margin: 20px;
+    padding-bottom: 50px;
+    display: block;
+    height: auto;
+    width: 90%;
+    
+}
 .product h1{
     font-size: 3rem;
     padding: 15px;
+    font-family: 'Luxurious Roman', cursive;
 }
 .product p{
     padding: 15px;
@@ -173,12 +185,116 @@ nav ul li:hover{
 }
 .lineup button{
     padding: 15px;
-    height: 50px;
-    width: 90px;
+    height: 70px;
+    width: 120px;
+    font-size: 1rem;
+}
+.lineup button:hover{
+    background-color: grey;
 }
 
+.foot{
+    display: flex;
+    height: 27vh;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: #CCCCCC;
+}
 
+.quick-links{
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 10px;
+}
 
+.quick-links h1{
+    text-align: center;
+    padding-left: 60px;
+    font-size: 2.5rem;
+}
+
+.quick-links ul li {
+    list-style-type: none;
+    padding: 20px;
+    text-shadow: grey;
+    cursor: pointer;
+    text-align: center;
+}
+.quick-links ul li :hover{
+    color: white;
+    cursor: pointer;
+}
+.quick-links ul li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.contact{
+    text-align: center;
+    padding: 10px;
+}
+.contact h1{
+    font-size: 2.5rem;
+    padding:5px;
+    font-family: 'Old Standard TT', serif;
+
+}
+.contact h2{
+    padding:5px;
+    font-size: 1.25rem;
+}
+.contact a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.25rem;
+}
+.contact a:hover{
+    color:white;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 140px;
+    text-decoration: none;
+    margin: 5px 80px;
+}
+.social-media{
+    padding:10px;
+}
+
+.social-media h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.social-media ul li{
+    text-decoration: none;
+    padding:5px;
+    list-style-type: none;
+}
+
+#credits{
+    padding-top: 75px;
+}
 @media only screen and (max-width:770px){
 
     header nav{
@@ -250,6 +366,7 @@ nav ul li:hover{
         padding: 10px;
         height: 100%;
         width: 75%;
+        padding-top: 50px;
     }
     .lineup{
         flex-direction: column;
@@ -267,5 +384,41 @@ nav ul li:hover{
         font-size: 1.6rem;
         font-family: 'Island Moments', cursive;
     }
-    
+    .foot{
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        padding:50px;
+    }
+    .quick-links h1{
+        align-items: center;
+        padding:5px;
+    }
+    .quick-links a{
+        align-items: center;
+    }
+    .contact h1{
+        align-self: center;
+        padding:5px;
+    }
+    .contact p{
+        padding:5px;
+        align-items: center;
+    }
+    .contact a{
+        align-items: center;
+    }
+    .social-media{
+        align-items: center;
+    }
+    .social-media h1{
+        align-items: center;
+        padding:5px;
+    }
+    .social-media ul li{
+        padding:5px;
+    }
+    .social-media ul li a{
+        padding: 20px;
+    }
 }
